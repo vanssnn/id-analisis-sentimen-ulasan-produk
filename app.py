@@ -40,6 +40,10 @@ with st.form("my_form"):
 
 if predict_btn:
     if sentence != '':
+
+        st.header("💬Ulasan")
+        st.write(sentence)
+
         # Preprocess the text
         sentence = preprocess_text(sentence)
 
@@ -56,6 +60,7 @@ if predict_btn:
         prediction = model.predict(sentence_vect)
 
         # Display the prediction
+        st.header("✨Prediksi")
         if prediction[0] == 1:
             st.success("👍Sentimen: **Positif**")
         else:
