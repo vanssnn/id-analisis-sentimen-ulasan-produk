@@ -3,7 +3,7 @@ import streamlit as st
 import pickle, json
 
 import nltk
-nltk.download('punkt_tab')
+nltk.download('punkt')
 
 from nltk.tokenize import word_tokenize
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
